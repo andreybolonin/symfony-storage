@@ -1,11 +1,44 @@
-
-
 parameters:
 	ignoreErrors:
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Dumper\\\\Port\\\\SymfonyPort\\:\\:dumpXliff2\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/Dumper/Port/SymfonyPort.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Dumper\\\\Port\\\\SymfonyPort\\:\\:dumpXliff2\\(\\) has parameter \\$defaultLocale with no typehint specified\\.$#"
+			count: 1
+			path: src/Dumper/Port/SymfonyPort.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Dumper\\\\Port\\\\SymfonyPort\\:\\:dumpXliff2\\(\\) has parameter \\$domain with no typehint specified\\.$#"
+			count: 1
+			path: src/Dumper/Port/SymfonyPort.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Dumper\\\\Port\\\\SymfonyPort\\:\\:dumpXliff2\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Dumper/Port/SymfonyPort.php
+
 		-
 			message: "#^Call to an undefined method DOMNode\\:\\:setAttribute\\(\\)\\.$#"
 			count: 5
 			path: src/Dumper/Port/SymfonyPort.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Dumper\\\\Port\\\\SymfonyPort\\:\\:hasMetadataArrayInfo\\(\\) has parameter \\$metadata with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Dumper/Port/SymfonyPort.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Dumper\\\\XliffDumper\\:\\:formatCatalogue\\(\\) has parameter \\$domain with no typehint specified\\.$#"
+			count: 1
+			path: src/Dumper/XliffDumper.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Dumper\\\\XliffDumper\\:\\:formatCatalogue\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Dumper/XliffDumper.php
 
 		-
 			message: "#^Call to static method getDefault\\(\\) on an unknown class Locale\\.$#"
@@ -13,9 +46,89 @@ parameters:
 			path: src/Dumper/XliffDumper.php
 
 		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Dumper\\\\XliffDumper\\:\\:format\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/Dumper/XliffDumper.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Dumper\\\\XliffDumper\\:\\:format\\(\\) has parameter \\$domain with no typehint specified\\.$#"
+			count: 1
+			path: src/Dumper/XliffDumper.php
+
+		-
+			message: "#^Property Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:\\$dir type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Property Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:\\$options type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:__construct\\(\\) has parameter \\$dir with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:__construct\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:create\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:update\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:delete\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:export\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:import\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:writeCatalogue\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:writeCatalogue\\(\\) has parameter \\$locale with no typehint specified\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
 			message: "#^Parameter \\#1 \\$catalogue of method Symfony\\\\Component\\\\Translation\\\\Writer\\\\TranslationWriterInterface\\:\\:write\\(\\) expects Symfony\\\\Component\\\\Translation\\\\MessageCatalogue, Symfony\\\\Component\\\\Translation\\\\MessageCatalogueInterface given\\.$#"
 			count: 2
 			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:loadCatalogue\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\FileStorage\\:\\:loadCatalogue\\(\\) has parameter \\$dirs with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/FileStorage.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\LegacyTranslationReader\\:\\:__construct\\(\\) has parameter \\$loader with no typehint specified\\.$#"
+			count: 1
+			path: src/LegacyTranslationReader.php
 
 		-
 			message: "#^Class Symfony\\\\Bundle\\\\FrameworkBundle\\\\Translation\\\\TranslationLoader not found\\.$#"
@@ -28,9 +141,44 @@ parameters:
 			path: src/LegacyTranslationReader.php
 
 		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\LegacyTranslationReader\\:\\:read\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/LegacyTranslationReader.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\LegacyTranslationReader\\:\\:read\\(\\) has parameter \\$directory with no typehint specified\\.$#"
+			count: 1
+			path: src/LegacyTranslationReader.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\LegacyTranslationWriter\\:\\:__construct\\(\\) has parameter \\$writer with no typehint specified\\.$#"
+			count: 1
+			path: src/LegacyTranslationWriter.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\LegacyTranslationWriter\\:\\:write\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/LegacyTranslationWriter.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\LegacyTranslationWriter\\:\\:write\\(\\) has parameter \\$format with no typehint specified\\.$#"
+			count: 1
+			path: src/LegacyTranslationWriter.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\LegacyTranslationWriter\\:\\:write\\(\\) has parameter \\$options with no typehint specified\\.$#"
+			count: 1
+			path: src/LegacyTranslationWriter.php
+
+		-
 			message: "#^Call to an undefined method Symfony\\\\Component\\\\Translation\\\\Writer\\\\TranslationWriter\\:\\:writeTranslations\\(\\)\\.$#"
 			count: 1
 			path: src/LegacyTranslationWriter.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Loader\\\\Port\\\\SymfonyPort\\:\\:extractXliff2\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/Loader/Port/SymfonyPort.php
 
 		-
 			message: "#^Cannot call method registerXPathNamespace\\(\\) on SimpleXMLElement\\|false\\.$#"
@@ -58,8 +206,42 @@ parameters:
 			path: src/Loader/Port/SymfonyPort.php
 
 		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Loader\\\\Port\\\\SymfonyPort\\:\\:extractXliff1\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/Loader/Port/SymfonyPort.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Loader\\\\Port\\\\SymfonyPort\\:\\:parseNotesMetadata\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Loader/Port/SymfonyPort.php
+
+		-
 			message: "#^Parameter \\#1 \\$content of method Translation\\\\SymfonyStorage\\\\Loader\\\\XliffLoader\\:\\:extractFromContent\\(\\) expects string, string\\|false given\\.$#"
 			count: 1
 			path: src/Loader/XliffLoader.php
 
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Loader\\\\XliffLoader\\:\\:extractFromContent\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/Loader/XliffLoader.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Loader\\\\XliffLoader\\:\\:getXmlErrors\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/Loader/XliffLoader.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\Loader\\\\XliffLoader\\:\\:getXmlErrors\\(\\) has parameter \\$internalErrors with no typehint specified\\.$#"
+			count: 1
+			path: src/Loader/XliffLoader.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\TranslationLoader\\:\\:loadMessages\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/TranslationLoader.php
+
+		-
+			message: "#^Method Translation\\\\SymfonyStorage\\\\XliffConverter\\:\\:catalogueToContent\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/XliffConverter.php
 
