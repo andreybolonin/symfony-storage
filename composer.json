@@ -10,6 +10,7 @@
     ],
     "require": {
         "php": "^7.2",
+        "ext-intl": "*",
         "php-translation/common": "^1.0",
         "symfony/translation": "^3.4 || ^4.2 || ^5.0",
         "nyholm/nsa": "^1.1"

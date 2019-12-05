@@ -1,0 +1,65 @@
+
+
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Call to an undefined method DOMNode\\:\\:setAttribute\\(\\)\\.$#"
+			count: 5
+			path: src/Dumper/Port/SymfonyPort.php
+
+		-
+			message: "#^Call to static method getDefault\\(\\) on an unknown class Locale\\.$#"
+			count: 1
+			path: src/Dumper/XliffDumper.php
+
+		-
+			message: "#^Parameter \\#1 \\$catalogue of method Symfony\\\\Component\\\\Translation\\\\Writer\\\\TranslationWriterInterface\\:\\:write\\(\\) expects Symfony\\\\Component\\\\Translation\\\\MessageCatalogue, Symfony\\\\Component\\\\Translation\\\\MessageCatalogueInterface given\\.$#"
+			count: 2
+			path: src/FileStorage.php
+
+		-
+			message: "#^Class Symfony\\\\Bundle\\\\FrameworkBundle\\\\Translation\\\\TranslationLoader not found\\.$#"
+			count: 1
+			path: src/LegacyTranslationReader.php
+
+		-
+			message: "#^Property Translation\\\\SymfonyStorage\\\\LegacyTranslationReader\\:\\:\\$loader \\(Translation\\\\SymfonyStorage\\\\TranslationLoader\\) does not accept Symfony\\\\Bundle\\\\FrameworkBundle\\\\Translation\\\\TranslationLoader\\|Translation\\\\SymfonyStorage\\\\TranslationLoader\\.$#"
+			count: 1
+			path: src/LegacyTranslationReader.php
+
+		-
+			message: "#^Call to an undefined method Symfony\\\\Component\\\\Translation\\\\Writer\\\\TranslationWriter\\:\\:writeTranslations\\(\\)\\.$#"
+			count: 1
+			path: src/LegacyTranslationWriter.php
+
+		-
+			message: "#^Cannot call method registerXPathNamespace\\(\\) on SimpleXMLElement\\|false\\.$#"
+			count: 2
+			path: src/Loader/Port/SymfonyPort.php
+
+		-
+			message: "#^Argument of an invalid type array\\<SimpleXMLElement\\>\\|false supplied for foreach, only iterables are supported\\.$#"
+			count: 2
+			path: src/Loader/Port/SymfonyPort.php
+
+		-
+			message: "#^Cannot call method xpath\\(\\) on SimpleXMLElement\\|false\\.$#"
+			count: 2
+			path: src/Loader/Port/SymfonyPort.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$args of function sprintf expects bool\\|float\\|int\\|string\\|null, DOMNode given\\.$#"
+			count: 1
+			path: src/Loader/Port/SymfonyPort.php
+
+		-
+			message: "#^Parameter \\#1 \\$str of function substr expects string, DOMNode given\\.$#"
+			count: 1
+			path: src/Loader/Port/SymfonyPort.php
+
+		-
+			message: "#^Parameter \\#1 \\$content of method Translation\\\\SymfonyStorage\\\\Loader\\\\XliffLoader\\:\\:extractFromContent\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Loader/XliffLoader.php
+
+
