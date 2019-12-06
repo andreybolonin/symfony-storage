@@ -5,11 +5,12 @@ on: [pull_request]
 jobs:
   static-code-analysis:
     runs-on: ubuntu-latest
+    services:
+        volumes:
+            - .:/project
     steps:
       - uses: actions/checkout@master
       - name: Run PHPStan
         uses: docker://jakzal/phpqa:php7.3-alpine
-        volumes:
-            - .:/project
         with:
             args: phpstan analyze
