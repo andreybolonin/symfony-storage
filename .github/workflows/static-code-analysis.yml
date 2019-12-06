@@ -9,5 +9,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Run PHPStan
         uses: docker://jakzal/phpqa:php7.3-alpine
+        volumes:
+            - .:/project
         with:
-            args: phpstan analyze /home/runner/work/symfony-storage/symfony-storage
+            args: phpstan analyze
